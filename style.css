@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-family: PT serif;
   margin: 0 auto;
-  background-color: red;
+  background-color: #9370db;
   /* opacity: 0.93; */
 }
 * {
