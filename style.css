@@ -204,17 +204,16 @@ section .create {
 }
 .title h2 {
   font-size: 33px;
-  color:black
-
+  color: black;
 }
-.middle{
-  background-color: #FFFAF0;
+.middle {
+  background-color: #fffaf0;
   /* margin:20px; */
-  width:97%;
-  margin:0 auto;
+  width: 97%;
+  margin: 0 auto;
   /* margin: 22px; */
 }
-.html{
+.html {
   background-color: white;
 }
 
@@ -226,12 +225,11 @@ section .create {
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
-  margin-left:5px;
-  margin-bottom:20px
- 
+  margin-left: 5px;
+  margin-bottom: 20px;
 }
 .categories ul {
-  border-bottom: 1px solid #C0C0C0;
+  border-bottom: 1px solid #c0c0c0;
   padding-bottom: 8px;
 }
 .categories ul li {
@@ -240,56 +238,53 @@ section .create {
   margin-top: 5px;
   margin-bottom: 1px;
 }
-.categories ul li a{
-  color:#708090;
+.categories ul li a {
+  color: #708090;
   padding-bottom: 9px;
   text-decoration: none;
-
 }
 .categories ul li a:link {
-  color:#708090;
+  color: #708090;
   font-size: 20px;
   text-decoration: none;
 }
-.categories ul li a:visited { 
+.categories ul li a:visited {
   border-bottom: 2px solid black;
   text-decoration: none;
-} 
-.categories ul li a:hover { 
+}
+.categories ul li a:hover {
   color: black;
   border-bottom: 2px solid black;
   text-decoration: none;
 }
- .categories ul li a:active { 
+.categories ul li a:active {
   border-bottom: 2px solid black;
   text-decoration: none;
 }
 
-.section{
-  width:96%;
-  margin:0 auto;
+.section {
+  width: 96%;
+  margin: 0 auto;
   overflow: auto;
-  
 }
-.content{
+.content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap:10px;
+  gap: 10px;
   padding-bottom: 10px;
-  
 }
 /* .section .content .dis{
   display: flex;
   flex-direction: column;
 } */
-.html a img{
-  width:284px;
-  height:160px
+.html a img {
+  width: 284px;
+  height: 160px;
 }
-.html .dis{
-  margin:10px
+.html .dis {
+  margin: 10px;
 }
-.html .dis li{
+.html .dis li {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -298,76 +293,78 @@ section .create {
 .html .dis li {
   margin: 3px;
 }
-.html .dis li h2{
+.html .dis li h2 {
   font-size: 20px;
 }
-.rating{
+.rating {
   display: flex;
   align-items: center;
   gap: 3px;
 }
-.rate{
+.rate {
   display: flex;
   align-items: center;
-  gap:3px
+  gap: 3px;
 }
-.rate .dash{
+.rate .dash {
   text-decoration: line-through;
-  text-decoration-style:solid;
+  text-decoration-style: solid;
 }
-.html .dis li .point{
+.html .dis li .point {
   font-size: 16px;
   border: 1px solid grey;
   padding: 4px;
-  background-color:#F0E68C;
+  background-color: #f0e68c;
   color: black;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
-.html .dis li p{
+.html .dis li p {
   font-size: 20px;
   margin-top: 8px;
 }
-.html .dis li ul li p{
+.html .dis li ul li p {
   padding-bottom: 8px;
 }
-.dash{
+.html .dis li ul li h3 {
+  font-size: 20px;
+}
+.dash {
   color: #808080;
 }
 .html {
-  border: 1.4px solid  #708090;
+  border: 1.4px solid #708090;
   border-radius: 22px;
 }
-.html a img{
+.html a img {
   border-top: 0.2px solid #778899;
   border-radius: 20px;
   border-bottom: none;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.more{
+.more {
   margin-left: 25px;
   margin-top: 10px;
   padding-bottom: 20px;
 }
-.more button{
+.more button {
   padding: 10px;
   font-size: 20px;
   outline: none;
   border: none;
-  border: 1.5px solid #A9A9A9;
+  border: 1.5px solid #a9a9a9;
   background-color: white;
   letter-spacing: 0.5px;
-  font-weight:600;
+  font-weight: 600;
 }
 .company {
   background-color: white;
   width: 97%;
   margin: 20px auto;
-
 }
-.com{
+.com {
   padding: 20px;
   text-align: center;
 }
@@ -376,22 +373,22 @@ section .create {
   justify-content: center;
 }
 
-.company .logos li{
+.company .logos li {
   display: inline-block;
   margin: 0 38px;
 }
-.company .com h3{
+.company .com h3 {
   font-size: 26px;
   padding-bottom: 20px;
-  color:#708090;
+  color: #708090;
 }
-.company .logos img{
+.company .logos img {
   height: 90px;
-  width:110px;
+  width: 110px;
   background-color: white;
 }
-.company{
+.company {
   /* background-color: #708090; */
-  border: 1.5px solid #F0E68C;
+  border: 1.5px solid #f0e68c;
   border-radius: 15px;
 }
