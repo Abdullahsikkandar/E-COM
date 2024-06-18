@@ -392,3 +392,68 @@ section .create {
   border: 1.5px solid #f0e68c;
   border-radius: 15px;
 }
+
+.add {
+  background-color: white;
+  width: 97%;
+  margin: 5px auto;
+  border: 1px solid silver;
+  border-radius: 15px;
+}
+hr {
+  border: 1px solid silver;
+  width: 92%;
+  margin-left: 44px;
+}
+.box img {
+  width: 121px;
+  height: 120px;
+  background-color: white;
+}
+.top h2 {
+  font-size: 40px;
+  padding: 16px;
+  text-align: center;
+}
+.final {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.final .box {
+  display: flex;
+  gap: 20px;
+  background-color: #fffaf0;
+  border: 1.5px solid #fffaf0;
+  border-left: 8px solid #fffaf0;
+  border-radius: 10px;
+}
+.final .box:hover {
+  border: 1.5px solid #9370db;
+  border-left: 8px solid #9370db;
+  border-radius: 10px;
+}
+.box .side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.side h3 {
+  font-size: 26px;
+}
+.side p {
+  font-size: 18px;
+}
+.side h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: silver;
+  letter-spacing: 1px;
+}
+.final .box:hover h2 {
+  color: #9370db;
+  cursor: pointer;
+}
