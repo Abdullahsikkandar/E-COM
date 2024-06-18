@@ -390,3 +390,8 @@ section .create {
   width:110px;
   background-color: white;
 }
+.company{
+  /* background-color: #708090; */
+  border: 1.5px solid #F0E68C;
+  border-radius: 15px;
+}
