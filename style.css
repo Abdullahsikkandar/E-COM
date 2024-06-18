@@ -212,6 +212,9 @@ section .create {
   width: 97%;
   margin: 0 auto;
   /* margin: 22px; */
+  border: 1px solid silver;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 .html {
   background-color: white;
@@ -399,6 +402,7 @@ section .create {
   margin: 5px auto;
   border: 1px solid silver;
   border-radius: 15px;
+  margin-top: 20px;
 }
 hr {
   border: 1px solid silver;
@@ -421,6 +425,7 @@ hr {
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   padding: 20px;
+  overflow: auto;
 }
 .final .box {
   display: flex;
