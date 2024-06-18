@@ -197,7 +197,6 @@ section .create {
   color: white;
   font-weight: 700;
   letter-spacing: 1.1px;
-  z-index: 1;
 }
 section .create:hover {
   opacity: 0.8;
