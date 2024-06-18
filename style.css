@@ -128,18 +128,25 @@ header {
   margin-left: 2%;
   color: white;
   align-self: center;
+  transition: transform 0.3s ease;
+}
+.buttons .log:hover {
+  transform: scale(0.9);
 }
 .buttons .sign {
   font-size: 18px;
   padding: 10px;
-  border: 1px solid orange;
+  border: 1px solid #9370db;
   border-radius: 3px;
-  background-color: #9370db;
   background-color: orange;
   color: black;
   font-weight: 500;
   opacity: 1;
   align-self: center;
+  transition: transform 0.3s ease;
+}
+.buttons .sign:hover {
+  transform: scale(0.9);
 }
 .link {
   display: flex;
@@ -190,6 +197,10 @@ section .create {
   color: white;
   font-weight: 700;
   letter-spacing: 1.1px;
+  z-index: 1;
+}
+section .create:hover {
+  opacity: 0.8;
 }
 
 /* .relative {
@@ -276,14 +287,17 @@ section .create {
   gap: 10px;
   padding-bottom: 10px;
 }
-/* .section .content .dis{
-  display: flex;
-  flex-direction: column;
-} */
 .html a img {
   width: 284px;
   height: 160px;
 }
+.html {
+  transition: transform 0.3s ease;
+}
+.html:hover {
+  transform: scale(0.95);
+}
+
 .html .dis {
   margin: 10px;
 }
@@ -404,16 +418,17 @@ section .create {
   border-radius: 15px;
   margin-top: 20px;
 }
-hr {
-  border: 1px solid silver;
-  width: 92%;
-  margin-left: 44px;
-}
 .box img {
   width: 121px;
   height: 120px;
   background-color: white;
 }
+hr {
+  border: 1px solid silver;
+  width: 92%;
+  margin-left: 44px;
+}
+
 .top h2 {
   font-size: 40px;
   padding: 16px;
@@ -455,10 +470,21 @@ hr {
 .side h2 {
   font-size: 20px;
   font-weight: bold;
-  color: silver;
-  letter-spacing: 1px;
+  color: #808080;
+  letter-spacing: 0.8px;
 }
 .final .box:hover h2 {
   color: #9370db;
+  cursor: pointer;
+}
+.side h3 span {
+  font-size: 17px;
+  font-weight: bold;
+  color: #9370db;
+  background-color: white;
+  margin-left: 20px;
+  border: 1.3px solid #9370db;
+  border-radius: 6px;
+  padding: 4px;
   cursor: pointer;
 }
