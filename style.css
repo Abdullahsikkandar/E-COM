@@ -204,6 +204,7 @@ section .create {
 }
 .title h2 {
   font-size: 33px;
+  color:black
 
 }
 .middle{
@@ -240,24 +241,23 @@ section .create {
   margin-bottom: 1px;
 }
 .categories ul li a{
-  color: black;
+  color:#708090;
   padding-bottom: 9px;
   text-decoration: none;
-  /* border-bottom: 1px solid #808080; */
 
 }
 .categories ul li a:link {
-  color: black;
+  color:#708090;
   font-size: 20px;
   text-decoration: none;
 }
 .categories ul li a:visited { 
-  color: black;
   border-bottom: 2px solid black;
   text-decoration: none;
 } 
 .categories ul li a:hover { 
-  border-bottom: 2px solid #778899;
+  color: black;
+  border-bottom: 2px solid black;
   text-decoration: none;
 }
  .categories ul li a:active { 
@@ -360,4 +360,33 @@ section .create {
   background-color: white;
   letter-spacing: 0.5px;
   font-weight:600;
+}
+.company {
+  background-color: white;
+  width: 97%;
+  margin: 20px auto;
+
+}
+.com{
+  padding: 20px;
+  text-align: center;
+}
+.company .log {
+  display: flex;
+  justify-content: center;
+}
+
+.company .logos li{
+  display: inline-block;
+  margin: 0 38px;
+}
+.company .com h3{
+  font-size: 26px;
+  padding-bottom: 20px;
+  color:#708090;
+}
+.company .logos img{
+  height: 90px;
+  width:110px;
+  background-color: white;
 }
