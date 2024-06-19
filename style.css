@@ -286,6 +286,7 @@ section .create:hover {
   gap: 10px;
   padding-bottom: 10px;
 }
+
 .html a img {
   width: 284px;
   height: 160px;
@@ -570,7 +571,7 @@ li {
   letter-spacing: 0.3px;
 }
 .box1 .second button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .box1 .third {
   padding-left: 16px;
