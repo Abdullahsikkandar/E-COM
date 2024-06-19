@@ -621,6 +621,7 @@ li {
   font-weight: bold;
   flex: 0 1 650px;
   color: white;
+  letter-spacing: 0.5px;
 }
 
 .topic .lan {
