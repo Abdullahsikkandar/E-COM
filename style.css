@@ -489,11 +489,12 @@ hr {
 }
 
 .package{
-  background-color: #fffaf0;
+  background-color: #F5F5F5;
   width:97%;
   margin :10px auto;
   border: 1px solid #fffaf0;
   border-radius: 18px;
+  overflow: auto;
 }
 .pack-head{
   padding:10px;
@@ -559,19 +560,21 @@ li{
   font-size: 14px;
 }
 .box1 .second button{
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Georgia, serif;
   padding: 4px;
   margin: 8px;
   margin-left: 0px;
   margin-top: 15px;
   width:90%;
   border:1px solid #778899;
-  color: white;
-  background-color: #778899;
+  color: #000000;
+  background-color: #c0c0c0;
+  letter-spacing: 0.3px;
 }
 .box1 .second button:hover{
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .box1 .third{
   padding-left: 16px;
