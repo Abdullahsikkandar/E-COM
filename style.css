@@ -1,25 +1,26 @@
+@charset "UTF-8";
 body {
   box-sizing: border-box;
   font-family: PT serif;
   margin: 0 auto;
   background-color: #9370db;
-  /* opacity: 0.93; */
-  }
-  
-  *{
+}
+
+* {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: PT serif;
-  }
-  .container {
+}
+
+.container {
   background-color: #9370db;
   width: 100%;
   margin: 0 auto;
-  /* opacity: 0.9; */
   position: relative;
-  }
-  header {
+}
+
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,33 +30,33 @@ body {
   box-shadow: 2px 2px 20px black;
   margin: 20px;
   overflow: auto;
-  }
-  .logo {
+}
+header .logo {
   display: inline-flex;
   gap: 10px;
   flex: 0 1 25vw;
   align-items: center;
   margin-left: 1%;
-  }
-  .logo img {
+}
+header .logo img {
   margin-top: 7px;
-  }
-  .logo h2 {
+}
+header .logo h2 {
   font-size: 25px;
-  }
-  .description {
+}
+header .description {
   background-color: white;
   padding-left: 14%;
-  }
-  .description .search {
+}
+header .description .search {
   display: inline-flex;
   flex: 0 1 40vw;
   padding: 5px;
   gap: -5px;
   align-items: center;
   padding: 3px;
-  }
-  .search button {
+}
+header .description .search button {
   color: #9370db;
   padding: 6.1px;
   border: 2px solid #9370db;
@@ -64,14 +65,14 @@ body {
   font-size: 22px;
   border-right: none;
   background-color: white;
-  }
-  .butt {
-  padding: 100px;
-  }
-  .butt svg {
+}
+header .description .search .butt {
+  padding: 6px;
+}
+header .description .search .butt svg {
   padding-top: 5px;
-  }
-  .search form input {
+}
+header .description .search form input {
   background-color: white;
   border: 2px solid #9370db;
   border-top-right-radius: 40px;
@@ -81,37 +82,15 @@ body {
   padding-bottom: 9px;
   border-left: none;
   color: black;
-  }
-  .search form input
-  {
   outline: none;
-  }
-  
-  /* .description p{
-  font-size: 20px;
-  letter-spacing: .5px;
-  } /
-  / .description p::after{
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-left: 8px;
-  margin-bottom: 3px;
-  border-left: 2px solid transparent;
-  border-top: 2px solid transparent;
-  border-right: 1.3px solid black;
-  border-bottom: 1.3px solid black;
-  transform: rotate(45deg);
-  } */
-  .buttons {
+}
+header .buttons {
   display: flex;
   flex: 0 0 26vw;
   gap: 8px;
   align-items: center;
-  }
-  
-  .buttons .cart {
+}
+header .buttons .cart {
   background: none;
   border: none;
   cursor: pointer;
@@ -119,8 +98,8 @@ body {
   outline: none;
   padding-top: 8px;
   margin-left: 6%;
-  }
-  .buttons .log {
+}
+header .buttons .log {
   font-size: 18px;
   padding: 10px;
   border: 0.5px solid #ff4500;
@@ -130,12 +109,11 @@ body {
   color: white;
   align-self: center;
   transition: transform 0.3s ease;
-  }
-  .buttons .log
-  {
+}
+header .buttons .log:hover {
   transform: scale(0.9);
-  }
-  .buttons .sign {
+}
+header .buttons .sign {
   font-size: 18px;
   padding: 10px;
   border: 1px solid #9370db;
@@ -146,53 +124,52 @@ body {
   opacity: 1;
   align-self: center;
   transition: transform 0.3s ease;
-  }
-  .buttons .sign
-  {
+}
+header .buttons .sign:hover {
   transform: scale(0.9);
-  }
-  .link {
+}
+
+section .link {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 30px;
   margin-bottom: 15px;
-  }
-  .link1 li {
+}
+section .link .link1 li {
   display: inline-block;
-  gap: 30px;
+  margin: 0 2px;
   color: white;
-  }
-  .link1 li a
-  {
+}
+section .link .link1 li a {
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
-  }
-  .link1 a {
-  color: white;
-  letter-spacing: 4px;
-  }
-  .link1 .website a {
+  letter-spacing: 2px;
+}
+section .link .link1 .website a {
   color: black;
-  }
-  .center {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+section .center {
   text-align: center;
   line-height: 1.1;
   padding: 0 15%;
-  }
-  .center h2 {
+}
+section .center h2 {
   font-size: 50px;
   font-weight: bold;
-  }
-  .center p {
+}
+section .center p {
   font-size: 30px;
   margin: 20px;
   color: white;
   font-weight: 100px;
   letter-spacing: 1px;
   /* word-spacing: 1.5; */
-  }
-  section .create {
+}
+section .center .create {
   font-size: 22px;
   padding: 12px;
   border: 0.5px solid black;
@@ -201,41 +178,31 @@ body {
   color: white;
   font-weight: 700;
   letter-spacing: 1.1px;
-  }
-  section .create
-  {
+}
+section .center .create:hover {
   opacity: 0.8;
-  }
-  
-   .relative {
-  position: absolute;
-  top: 100%;
-  right: 3%;
-  } 
-  .title {
-  margin: 19px;
-  margin-bottom: 6px;
-  padding-top: 10px;
-  }
-  .title h2 {
-  font-size: 33px;
-  color: black;
-  }
-  .middle {
+}
+
+.middle {
   background-color: #fffaf0;
-  margin:20px; 
+  margin: 20px;
   width: 97%;
   margin: 0 auto;
-  margin: 22px; 
+  margin: 22px;
   border: 1px solid silver;
   border-radius: 10px;
   margin-top: 15px;
-  }
-  .html {
-  background-color: white;
-  }
-  
-  .categories {
+}
+.middle .title {
+  margin: 19px;
+  margin-bottom: 6px;
+  padding-top: 10px;
+}
+.middle .title h2 {
+  font-size: 33px;
+  color: black;
+}
+.middle .categories {
   margin: 12px;
   margin-bottom: 1px;
   margin-top: 8px;
@@ -245,99 +212,83 @@ body {
   padding: 10px;
   margin-left: 5px;
   margin-bottom: 20px;
-  }
-  .categories ul {
+}
+.middle .categories ul {
   border-bottom: 1px solid #c0c0c0;
   padding-bottom: 8px;
-  }
-  .categories ul li {
+}
+.middle .categories ul li {
   display: inline-block;
   margin: 10px;
   margin-top: 5px;
   margin-bottom: 1px;
-  }
-  .categories ul li a {
-  color: #708090;
+}
+.middle .categories ul li a {
+  color: black;
+  font-size: 20px;
   padding-bottom: 9px;
   text-decoration: none;
-  }
-  .categories ul li a
-  {
-  color: #708090;
-  font-size: 20px;
-  text-decoration: none;
-  }
-  .categories ul li a
-  {
-  border-bottom: 2px solid black;
-  text-decoration: none;
-  }
-  .categories ul li a
-  {
+}
+.middle .categories ul li a:hover {
   color: black;
-  border-bottom: 2px solid black;
-  text-decoration: none;
-  }
-  .categories ul li a
-  {
-  border-bottom: 2px solid black;
-  text-decoration: none;
-  }
-  
-  .section {
+  border-bottom: 2px solid #9370db;
+}
+.middle .section {
   width: 96%;
   margin: 0 auto;
   overflow: auto;
-  }
-  .content {
+}
+.middle .section .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   padding-bottom: 10px;
-  }
-  
-  .html a img {
+}
+.middle .section .content .html {
+  transition: transform 0.3s ease;
+  border: 1.4px solid #708090;
+  border-radius: 22px;
+}
+.middle .section .content .html:hover {
+  transform: scale(0.95);
+}
+.middle .section .content .html a img {
   width: 284px;
   height: 160px;
-  }
-  .html {
-  transition: transform 0.3s ease;
-  }
-  .html
-  {
-  transform: scale(0.95);
-  }
-  
-  .html .dis {
+  border-top: 0.2px solid #778899;
+  border-radius: 20px;
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.middle .section .content .html .dis {
   margin: 10px;
-  }
-  .html .dis li {
+}
+.middle .section .content .html .dis li {
   display: flex;
   flex-direction: column;
   list-style: none;
   align-items: flex-start;
-  }
-  .html .dis li {
   margin: 3px;
-  }
-  .html .dis li h2 {
+}
+.middle .section .content .html .dis li h2 {
   font-size: 20px;
-  }
-  .rating {
+}
+.middle .section .content .html .dis li .rating {
   display: flex;
   align-items: center;
   gap: 3px;
-  }
-  .rate {
+}
+.middle .section .content .html .dis li .rate {
   display: flex;
   align-items: center;
   gap: 3px;
-  }
-  .rate .dash {
+}
+.middle .section .content .html .dis li .rate .dash {
   text-decoration: line-through;
   text-decoration-style: solid;
-  }
-  .html .dis li .point {
+}
+.middle .section .content .html .dis li .point {
   font-size: 16px;
   border: 1px solid grey;
   padding: 4px;
@@ -346,37 +297,26 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  }
-  .html .dis li p {
+}
+.middle .section .content .html .dis li p {
   font-size: 20px;
   margin-top: 8px;
-  }
-  .html .dis li ul li p {
+}
+.middle .section .content .html .dis li ul li p {
   padding-bottom: 8px;
-  }
-  .html .dis li ul li h3 {
+}
+.middle .section .content .html .dis li ul li h3 {
   font-size: 20px;
-  }
-  .dash {
+}
+.middle .section .content .html .dis li ul li .dash {
   color: #808080;
-  }
-  .html {
-  border: 1.4px solid #708090;
-  border-radius: 22px;
-  }
-  .html a img {
-  border-top: 0.2px solid #778899;
-  border-radius: 20px;
-  border-bottom: none;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  }
-  .more {
+}
+.middle .more {
   margin-left: 25px;
   margin-top: 10px;
   padding-bottom: 20px;
-  }
-  .more button {
+}
+.middle .more button {
   padding: 10px;
   font-size: 20px;
   outline: none;
@@ -385,111 +325,59 @@ body {
   background-color: white;
   letter-spacing: 0.5px;
   font-weight: 600;
-  }
-  .company {
-  background-color: white;
-  width: 97%;
-  margin: 20px auto;
-  }
-  .com {
-  padding: 20px;
-  text-align: center;
-  }
-  .company .log {
-  display: flex;
-  justify-content: center;
-  }
-  
-  .company .logos li {
-  display: inline-block;
-  margin: 0 38px;
-  }
-  .company .com h3 {
-  font-size: 26px;
-  padding-bottom: 20px;
-  color: #708090;
-  }
-  .company .logos img {
-  height: 90px;
-  width: 110px;
-  background-color: white;
-  }
-  .company {
-  /* background-color: #708090; */
-  border: 1.5px solid #f0e68c;
-  border-radius: 15px;
-  }
-  
-  .add {
+}
+
+.add {
   background-color: white;
   width: 97%;
   margin: 5px auto;
   border: 1px solid silver;
   border-radius: 15px;
   margin-top: 20px;
-  }
-  .box img {
-  width: 121px;
-  height: 120px;
-  background-color: white;
-  }
-  hr {
-  border: 1px solid silver;
-  width: 92%;
-  margin-left: 44px;
-  }
-  
-  .top h2 {
-  font-size: 40px;
-  padding: 16px;
-  text-align: center;
-  }
-  .final {
+}
+.add .final {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   padding: 20px;
   overflow: auto;
-  }
-  .final .box {
+}
+.add .final .box {
   display: flex;
   gap: 20px;
   background-color: #fffaf0;
   border: 1.5px solid #fffaf0;
   border-left: 8px solid #fffaf0;
   border-radius: 10px;
-  }
-  .final .box
-  {
+}
+.add .final .box:hover {
   border: 1.5px solid #9370db;
   border-left: 8px solid #9370db;
   border-radius: 10px;
-  }
-  .box .side {
+}
+.add .final .box:hover .side h2 {
+  color: #9370db;
+}
+.add .final .box h2 {
+  color: #9370db;
+  cursor: pointer;
+}
+.add .final .box img {
+  width: 121px;
+  height: 120px;
+  background-color: white;
+}
+.add .final .box .side {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  }
-  .side h3 {
+}
+.add .final .box .side h3 {
   font-size: 26px;
-  }
-  .side p {
-  font-size: 18px;
-  }
-  .side h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #808080;
-  letter-spacing: 0.8px;
-  }
-  .final .box
-  h2 {
-  color: #9370db;
-  cursor: pointer;
-  }
-  .side h3 span {
+}
+.add .final .box .side h3 span {
   font-size: 17px;
   font-weight: bold;
   color: #9370db;
@@ -499,78 +387,115 @@ body {
   border-radius: 6px;
   padding: 4px;
   cursor: pointer;
-  }
-  
-  .package {
+}
+.add .final .box .side p {
+  font-size: 18px;
+}
+.add .final .box .side h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: silver;
+  letter-spacing: 0.8px;
+}
+.add .top h2 {
+  font-size: 40px;
+  padding: 16px;
+  text-align: center;
+}
+
+.company {
+  background-color: white;
+  width: 97%;
+  margin: 20px auto;
+  border: 1.5px solid #f0e68c;
+  border-radius: 15px;
+}
+.company .com {
+  padding: 20px;
+  text-align: center;
+}
+.company .com h3 {
+  font-size: 26px;
+  padding-bottom: 20px;
+  color: #708090;
+}
+.company .log {
+  display: flex;
+  justify-content: center;
+}
+.company .log .logos li {
+  display: inline-block;
+  margin: 0 38px;
+}
+.company .log .logos li img {
+  height: 90px;
+  width: 110px;
+  background-color: white;
+}
+
+.package {
   background-color: #f5f5f5;
   width: 97%;
   margin: 10px auto;
   border: 1px solid #fffaf0;
   border-radius: 18px;
   overflow: auto;
-  }
-  .pack-head {
+}
+.package .pack-head {
   padding: 10px;
   padding-left: 25px;
-  }
-  .pack-head h2 {
+}
+.package .pack-head h2 {
   font-size: 36px;
   font-weight: bold;
   padding: 5px;
-  }
-  .pack-head p {
+}
+.package .pack-head p {
   font-size: 20px;
   color: #808080;
   padding: 5px;
-  }
-  .subscriptions {
+}
+.package .subscriptions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 30px;
   gap: 20px;
-  }
-  li {
-  list-style: none;
-  }
-  .box1 {
+}
+.package .subscriptions .box1 {
   padding-top: 0px;
   background-color: white;
   border: 1px solid silver;
   border-top: 10px solid #0000ff;
   border-radius: 14px;
-  }
-  
-  .box1 .first {
+}
+.package .subscriptions .box1 .first {
   padding: 5px;
   padding-left: 15px;
   background-color: #f8f8ff;
   padding-top: 15px;
-  }
-  .box1 .first li
-  {
+}
+.package .subscriptions .box1 .first li {
+  list-style: none;
   font-size: 26px;
   font-weight: bold;
-  }
-  .box1 .first li
-  {
   display: flex;
   gap: 8px;
   align-items: center;
   margin: 3px 0px;
-  }
-  .box1 .second {
+}
+.package .subscriptions .box1 .second {
   padding: 5px 16px;
   margin-top: 20px;
   margin-bottom: 10px;
-  }
-  .box1 .second h3 {
+}
+.package .subscriptions .box1 .second h3 {
   font-size: 18px;
   font-family: PT serif;
-  }
-  .box1 .second p {
+}
+.package .subscriptions .box1 .second p {
   font-size: 14px;
-  }
-  .box1 .second button {
+}
+.package .subscriptions .box1 .second button {
   font-size: 18px;
   font-weight: 600;
   font-family: Georgia, serif;
@@ -583,22 +508,22 @@ body {
   color: white;
   background-color: black;
   letter-spacing: 0.3px;
-  }
-  .box1 .second button:hover{
+}
+.package .subscriptions .box1 .second button:hover {
   opacity: 0.8;
-  }
-  .box1 .third {
+}
+.package .subscriptions .box1 .third {
   padding-left: 16px;
   padding-bottom: 13px;
-  }
-  .box1 .third ul li {
+}
+.package .subscriptions .box1 .third ul li {
   margin: 8px 0px;
   position: relative;
   margin-left: 30px;
   font-size: 17px;
-  }
-  .box1 .third ul li:before{
-  content: "\2713";
+}
+.package .subscriptions .box1 .third ul li::before {
+  content: "✓";
   position: absolute;
   left: -30px;
   width: 9px;
@@ -612,9 +537,9 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 15px;
-  /* font-weight: bold; */
-  }
-  .last {
+}
+
+.last {
   width: 98.4%;
   background-color: #2d2f31;
   padding-left: 20px;
@@ -622,79 +547,82 @@ body {
   margin: 0 auto;
   margin-top: -28px;
   position: relative;
-  }
-  .topic {
+}
+.last .hor {
+  width: 101%;
+  margin-left: -14px;
+  margin-top: 20px;
+}
+.last .topic {
   display: flex;
   align-items: center;
   gap: 150px;
   padding-top: 20px;
   margin-left: 20px;
-  }
-  .topic h1 {
+}
+.last .topic h1 {
   font-size: 28px;
   font-weight: bold;
   flex: 0 1 650px;
   color: white;
   letter-spacing: 0.5px;
-  }
-  
-  .topic .lan {
+}
+.last .topic .lan {
   margin-left: 150px;
   padding: 5px 12px;
-  }
-  .topic span {
-  font-size: 20px;
-  color: white;
-  margin-left: -5px;
-  }
-  .links {
-  display: flex;
-  gap: 150px;
-  margin-top: 50px;
-  margin-left: 20px;
-  }
-  .links .line ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  }
-  .links .line ul li {
-  font-size: 18px;
-  color: white;
-  }
-  .links .line ul li
-  {
-  text-decoration: underline;
-  cursor: pointer;
-  }
-  .lan {
   display: flex;
   align-items: center;
   gap: 10px;
   border: 1px solid silver;
-  }
-  .last1 {
+}
+.last .topic span {
+  font-size: 20px;
+  color: white;
+  margin-left: -5px;
+}
+.last .links {
+  display: flex;
+  gap: 150px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.last .line ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.last .line ul li {
+  font-size: 18px;
+  color: white;
+}
+.last .line ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.last .last1 {
   padding-left: 20px;
   margin-top: 40px;
   display: flex;
   align-items: center;
-  }
-  .last1 .logo3 {
+}
+.last .last1 .logo3 {
   display: flex;
   align-items: center;
   gap: 15px;
-  }
-  .last1 .logo3 h2 {
+}
+.last .last1 .logo3 h2 {
   font-size: 26px;
   color: white;
-  }
-  .last1 p {
+}
+.last .last1 p {
   color: white;
   font-size: 18px;
   margin-left: 800px;
-  }
-  .hor {
+}
+.last .last1 .hor {
   width: 101%;
   margin-left: -14px;
   margin-top: 20px;
-  }
+}
+
+/*# sourceMappingURL=style.css.map */
