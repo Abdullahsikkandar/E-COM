@@ -248,6 +248,7 @@ section .center .create:hover {
   transition: transform 0.3s ease;
   border: 1.4px solid #708090;
   border-radius: 22px;
+  background-color: white;
 }
 .middle .section .content .html:hover {
   transform: scale(0.95);
@@ -548,6 +549,7 @@ section .center .create:hover {
   margin: 0 auto;
   margin-top: -28px;
   position: relative;
+  overflow: auto;
 }
 .last .hor {
   width: 101%;
@@ -583,9 +585,9 @@ section .center .create:hover {
 }
 .last .links {
   display: flex;
-  gap: 150px;
   margin-top: 50px;
   margin-left: 20px;
+  gap: 15%;
 }
 .last .line ul {
   display: flex;
@@ -595,6 +597,7 @@ section .center .create:hover {
 .last .line ul li {
   font-size: 18px;
   color: white;
+  list-style: none;
 }
 .last .line ul li:hover {
   text-decoration: underline;
@@ -605,6 +608,8 @@ section .center .create:hover {
   margin-top: 40px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 63%;
 }
 .last .last1 .logo3 {
   display: flex;
@@ -618,7 +623,7 @@ section .center .create:hover {
 .last .last1 p {
   color: white;
   font-size: 18px;
-  margin-left: 800px;
+  margin-right: 100px;
 }
 .last .last1 .hor {
   width: 101%;

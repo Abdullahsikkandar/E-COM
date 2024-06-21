@@ -251,6 +251,7 @@ section {
         transition: transform 0.3s ease;
         border: 1.4px solid #708090;
         border-radius: 22px;
+        background-color: white;
         &:hover {
           transform: scale(0.95);
         }
@@ -562,6 +563,7 @@ section {
   margin: 0 auto;
   margin-top: -28px;
   position: relative;
+  overflow: auto;
   .hor {
     width: 101%;
     margin-left: -14px;
@@ -596,9 +598,10 @@ section {
   }
   .links {
     display: flex;
-    gap: 150px;
     margin-top: 50px;
     margin-left: 20px;
+    // justify-content: space-around;
+    gap: 15%;
   }
   .line ul {
     display: flex;
@@ -607,6 +610,7 @@ section {
     li {
       font-size: 18px;
       color: white;
+      list-style: none;
       &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -618,6 +622,8 @@ section {
     margin-top: 40px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 63%;
     .logo3 {
       display: flex;
       align-items: center;
@@ -630,7 +636,7 @@ section {
     p {
       color: white;
       font-size: 18px;
-      margin-left: 800px;
+      margin-right: 100px;
     }
     .hor {
       width: 101%;
