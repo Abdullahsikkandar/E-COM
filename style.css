@@ -521,6 +521,7 @@ section .center .create:hover {
   position: relative;
   margin-left: 30px;
   font-size: 17px;
+  list-style: none;
 }
 .package .subscriptions .box1 .third ul li::before {
   content: "✓";
